@@ -49,7 +49,7 @@ const formSubmit = (e) => {
             }
         }
     };
-    getUser("fabpot");
+
 
 const getRepos = async (username) => {
     try {
@@ -94,6 +94,8 @@ const createErrorCard = (msg) => {
     `;
     main.innerHTML = cardHTML;
 };
+
+
 
 // Change background
 const flipTheme = (theme) => {
