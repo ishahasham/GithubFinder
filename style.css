@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8ff;
+    font-family: "Space Mono", monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    overflow-y: scroll;
+}
+
+:root {
+    --electric: #0079ff;
+    --grey: #697c9a;
+    --darkSky: #4b6a9b;
+    --darkBlue: #2b3442;
+    --lightBg: #f6f8ff;
+    --light: #fefefe;
+    --white: #ffffff;
+    --dark: #141d2f;
+    --semiDark: #1e2a47;
+    --error: #f74646;
+  }
+
+.user-form {
+    max-width: 700px;
+    width: 100%;
+}
+
+.user-form input  {
+    width: 50%;
+    display: block;
+    background-color: #0D1117;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 1rem;
+    margin: 0 auto 2rem auto;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+        position: sticky;
+}
+
+.user-form input::placeholder {
+    color: #bbb;
+}
+
+.user-form input:focus {
+    outline: none;
+}
+
+.card {
+    max-width: 800px;
+    background-color: #0D1117;
+    border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.avatar {
+    border-radius: 50%;
+    border: 10px solid #0D1117;
+    height: 150px;
+    width: 150px;
+}
+
+.user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.user-info ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.repo {
+    text-decoration: none;
+    color: #fff;
+    background-color:#0D1117;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+
+
+
+.header {
+    padding-top: 40px;
+    margin-top: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+  
+   .title {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 38.51px;
+    color: #222731;
+  }
+  
+  .title.dark {
+    color: #f6f8ff;
+  } 
+  
+  .theme-text  {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 19.25px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #222731;
+  }
+  
+  .theme-text.dark {
+    color: var(--white);
+  }
+  
+  .theme-panel {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+  }
+  #moon,
+  #sun {
+    cursor: pointer;
+  }
+  
+  #sun {
+    display: none;
+  }
+
+  
+  
+
+@media (max-width: 500px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body{
+        margin: 4rem;
+    }
+
+    .user-form {
+        max-width: 400px;
+    }
+
+    .header {
+        padding-top: 40px;
+        margin-top: 71px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+}
+
+
+@media (max-width: 400px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body{
+        margin: 4rem;
+    }
+
+    .user-form {
+        max-width: 400px;
+    }
+
+    .header {
+        padding-top: 40px;
+        margin-top: 71px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+}
+
+@media (max-width: 640px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body{
+        margin: 4rem;
+    }
+
+    .user-form {
+        max-width: 400px;
+    }
+
+    .header {
+        padding-top: 40px;
+        margin-top: 71px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+      }
+
+}
+
+
