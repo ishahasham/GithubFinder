@@ -137,18 +137,6 @@ body {
     color: #f6f8ff;
   } 
   
-  .theme-text  {
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 19.25px;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    color: #222731;
-  }
-  
-  .theme-text.dark {
-    color: var(--white);
-  }
   
   .theme-panel {
     display: flex;
@@ -165,8 +153,7 @@ body {
   }
 
   
-  
-
+  /*all media query */
 @media (max-width: 500px) {
     .card {
         flex-direction: column;
